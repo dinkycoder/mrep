@@ -1,4 +1,4 @@
-# P-23: AWS replaces Google Cloud as Agency Lab's platform
+# P-23: AWS replaces Google Cloud as MREP's platform
 
 Nov 8, 2026 · @dinky
 
@@ -7,11 +7,11 @@ Nov 8, 2026 · @dinky
 | Status | Accepted, November 8, 2026 |
 | Supersedes | P-20 (Google Cloud) |
 | Amends | P-06 (where the key lives), P-21 (where the committee runs) and P-22 (tests and the kill switch) |
-| Related | [P-24](P-24-base-chain.md) (Base) and [P-25](P-25-agency-lab-name.md) (the name) |
+| Related | [P-24](P-24-base-chain.md) (Base), [P-29](P-29-mrep-name-and-path.md) (the MREP name) and [P-30](P-30-agent-authorization-and-validation.md) (agent authorization) |
 
 ## Summary
 
-**Agency Lab moves from Google Cloud to AWS, because AWS pays for things on Base natively and the book's lessons never depended on Google's services.** *Building the Agentic Enterprise* teaches its disciplines through Google Cloud, but its author says its patterns are designed not to depend on any one foundation (p. 637), and its 774 pages hold only about a dozen import lines from Google's agent framework. The one layer Agency Lab adds, agents paying in stablecoins, is the layer the book leaves out: it never mentions x402, blockchains or stablecoins, and only one agent in its case study touches payments at all (Table 12.4, pp. 633–634). Amazon Bedrock AgentCore payments fills that gap, because it settles x402 payments in USDC on Base, including Base Sepolia, the test network Agency Lab uses.
+**MREP moves from Google Cloud to AWS, because AWS pays for things on Base natively and the book's lessons never depended on Google's services.** *Building the Agentic Enterprise* teaches its disciplines through Google Cloud, but its author says its patterns are designed not to depend on any one foundation (p. 637), and its 774 pages hold only about a dozen import lines from Google's agent framework. The one layer MREP adds, agents paying in stablecoins, is the layer the book leaves out: it never mentions x402, blockchains or stablecoins, and only one agent in its case study touches payments at all (Table 12.4, pp. 633–634). Amazon Bedrock AgentCore payments fills that gap, because it settles x402 payments in USDC on Base, including Base Sepolia, the test network MREP uses.
 
 The swap keeps the book's register, gates and six habits and changes only the services underneath them. Python stays the language for every agent, every tool and the infrastructure code, and GitHub Actions stays the only way anything is deployed.
 
@@ -23,9 +23,9 @@ First, the chain moved to Base under P-24. On Base, AWS offers a managed payment
 
 ## Decision
 
-**Agency Lab runs on AWS in one region, us-east-1, serverless first.** Infrastructure is AWS CDK code in Python, deployed by GitHub Actions through OIDC, so no long-lived AWS key exists anywhere. Each Google Cloud piece the book uses gets one AWS counterpart:
+**MREP runs on AWS in one region, us-east-1, serverless first.** Infrastructure is AWS CDK code in Python, deployed by GitHub Actions through OIDC, so no long-lived AWS key exists anywhere. Each Google Cloud piece the book uses gets one AWS counterpart:
 
-| The book on Google Cloud | Agency Lab on AWS | Why this one |
+| The book on Google Cloud | MREP on AWS | Why this one |
 | --- | --- | --- |
 | Agent Development Kit (ADK) on Agent Runtime | Strands Agents, AWS's open-source Python framework, on AgentCore Runtime | AgentCore Runtime hosts ADK too, but AgentCore Memory and AgentCore payments integrate with Strands and LangGraph, not ADK, so ADK would be a second-class citizen |
 | Gemini Flash and Pro tiers | Amazon Bedrock model tiers, pinned by tier in the release manifest, following the book's decision 9 to pin model tiers rather than model IDs (p. 704) | Bedrock's IAM roles authorize every call, so there is no model API key to leak, and batch inference costs half the on-demand price for the models that offer it |
@@ -50,15 +50,15 @@ First, the chain moved to Base under P-24. On Base, AWS offers a managed payment
 | Grounding with Google Search | Paid search bought over x402 with the toolkit's own payments | The research desk buys its evidence the same way it teaches agents to pay |
 | AP2 and UCP for commerce | x402 through AgentCore payments, with AP2 kept as a subject the scorecard studies | AP2 already has an x402 extension, so nothing is lost by settling on x402 |
 
-**Two payment paths run side by side and are compared in module 9.** The toolkit's own path, which modules 1 to 8 build, signs with a key created inside AWS KMS (P-06). AgentCore payments, the managed path, signs through a Coinbase CDP or Stripe Privy wallet whose key that provider holds, and it caps each payment session with a budget and an expiry. Neither path ever puts a key in Agency Lab's code, prompts or logs. Agency Lab teaches both, publishes the comparison, and lets the research desk use whichever passes its gate cases.
+**Two payment paths run side by side and are compared in module 9.** The toolkit's own path, which modules 1 to 8 build, signs with a key created inside AWS KMS (P-06). AgentCore payments, the managed path, signs through a Coinbase CDP or Stripe Privy wallet whose key that provider holds, and it caps each payment session with a budget and an expiry. Neither path ever puts a key in MREP's code, prompts or logs. MREP teaches both, publishes the comparison, and lets the research desk use whichever passes its gate cases.
 
 **P-22 changes with the platform.** Every commit still runs the 50-query smoke set, but the 200-plus-query golden set no longer runs nightly. It runs only when a unit joins the committee and at each rung gate, on Bedrock batch inference, at half price for the models that offer it, which keeps test costs close to the minimum the capstone needs. The kill switch runs from a CloudWatch alarm through SNS to a Lambda function that sets a flag in DynamoDB, adds an AgentCore Policy rule that denies every payment tool, pauses the EventBridge schedules and applies an IAM deny to the agents' roles. API Gateway and every service check the flag before acting.
 
 ## Consequences
 
-**Agency Lab gets payments, identity, memory, policy and evaluation as managed services in one account,** so the build spends its effort on the toolkit and the research instead of on plumbing. Everything an agent does stays in Python, the language the curriculum and the reader challenges already use.
+**MREP gets payments, identity, memory, policy and evaluation as managed services in one account,** so the build spends its effort on the toolkit and the research instead of on plumbing. Everything an agent does stays in Python, the language the curriculum and the reader challenges already use.
 
-**Some of Google's integration is lost.** AWS has no single equivalent of VPC Service Controls, no counterpart to Google's low-code agent studio, and no Google Search grounding, and the book's code examples need translating from ADK into Strands. The perimeter returns as a recorded deviation, to be revisited when Agency Lab first holds private data.
+**Some of Google's integration is lost.** AWS has no single equivalent of VPC Service Controls, no counterpart to Google's low-code agent studio, and no Google Search grounding, and the book's code examples need translating from ADK into Strands. The perimeter returns as a recorded deviation, to be revisited when MREP first holds private data.
 
 **The cost reference returns to Bedrock, and it is higher than a few cents a run.** The November 6 research priced the earlier eight-agent committee on Claude at about $1.00 for a standard run, or about $1.10 with Bedrock's 10% regional premium, and proposed a provisional ceiling of $2.15, with module 12's single unit at about $0.35 ([research report](../research/research-engine-research-report.md)). The book's own three-agent pipeline costs $0.15 to $0.40 a thesis (p. 109). Putting the specialists on the cheapest Bedrock tier and keeping the reasoning tier for synthesis will lower those figures, and the ceiling is set by measurement under P-10 before any unit joins.
 
@@ -74,7 +74,7 @@ First, the chain moved to Base under P-24. On Base, AWS offers a managed payment
 
 ## Revisit when
 
-At the rung-3 cost and Well-Architected review; if AgentCore payments stops supporting Base Sepolia; if Bedrock lacks a model tier a unit needs; or when Agency Lab first stores private data, which brings the data perimeter back.
+At the rung-3 cost and Well-Architected review; if AgentCore payments stops supporting Base Sepolia; if Bedrock lacks a model tier a unit needs; or when MREP first stores private data, which brings the data perimeter back.
 
 ## Sources
 
@@ -91,4 +91,4 @@ At the rung-3 cost and Well-Architected review; if AgentCore payments stops supp
 - Chainlink, [AWS KMS Signer](https://docs.chain.link/crec/guides/signers/aws-kms), on signing with an `ECC_SECG_P256K1` KMS key
 - GitHub, [Configuring OpenID Connect in Amazon Web Services](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
 - Linkup, [x402 payments](https://docs.linkup.so/pages/documentation/platform/x402.md), an example of search bought per request in USDC on Base
-- Agency Lab, [research engine research report](../research/research-engine-research-report.md) (November 6, 2026), the Bedrock cost estimates
+- MREP, [research engine research report](../research/research-engine-research-report.md) (November 6, 2026), the Bedrock cost estimates

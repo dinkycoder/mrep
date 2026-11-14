@@ -1,6 +1,6 @@
-# Contributing to Agency Lab
+# Contributing to MREP
 
-Thanks for helping. Agency Lab is built in public, so questions, fixes and ideas are all welcome, and small changes are the easiest to review.
+Thanks for helping. MREP is built in public, so questions, fixes and ideas are all welcome, and small changes are the easiest to review.
 
 ## Where to contribute
 
@@ -10,7 +10,7 @@ Open issues and pull requests on GitHub at [github.com/dinkycoder/mrep](https://
 
 These apply to every issue, pull request, comment and screenshot.
 
-1. **Test money only.** Everything runs on Base Sepolia, Base's free test network, where all money is free and worthless. Never point Agency Lab at real money, and never propose a token or a stablecoin of Agency Lab's own.
+1. **Test money only.** Everything runs on Base Sepolia, Base's free test network, where all money is free and worthless. Never point MREP at real money, and never propose a token or a stablecoin of MREP's own.
 2. **No secrets, ever.** Never commit, paste or screenshot a wallet key, seed phrase or API key. If one slips in, treat it as stolen: move any funds and replace the key at once, because deleting the commit doesn't remove it from history.
 3. **Report security problems privately.** Don't post the details of a vulnerability in public. Open an issue that says only that you found one, and you'll be contacted privately.
 
@@ -33,7 +33,7 @@ Changes to anything a person sees follow the [design system](design-system/READM
 
 ## License
 
-By contributing, you agree that your contribution is released under the [MIT License](LICENSE), the same license as the rest of Agency Lab.
+By contributing, you agree that your contribution is released under the [MIT License](LICENSE), the same license as the rest of MREP.
 
 ## Be kind
 

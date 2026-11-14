@@ -1,8 +1,8 @@
-# Agency Lab Design Guidelines
+# MREP Design Guidelines
 
 Nov 8, 2026 · @dinky
 
-**These are the rules Agency Lab's UX agent follows and that any builder may reuse.** The style guide comes before any screen, the base is Carbon with Agency Lab's own look, a persuasion policy protects consent, and Agency Lab adds the money components that agent-payments apps need. The guidelines ship in numbered releases with the code, and every do-and-don't pair runs as an automated test.
+**These are the rules MREP's UX agent follows and that any builder may reuse.** The style guide comes before any screen, the base is Carbon with MREP's own look, a persuasion policy protects consent, and MREP adds the money components that agent-payments apps need. The guidelines ship in numbered releases with the code, and every do-and-don't pair runs as an automated test.
 
 ## Principles and persuasion policy
 
@@ -28,7 +28,7 @@ Some effects justify safeguards rather than tactics. The Cashless Effect makes i
 
 ## Foundations
 
-**The style guide is written in module 8, before the first screen, so every later part inherits it.** Agency Lab keeps the structure of [Carbon](https://www.carbondesignsystem.com/), IBM's open-source design system, and replaces its look. Screens then behave like a mature system without looking like an IBM product.
+**The style guide is written in module 8, before the first screen, so every later part inherits it.** MREP keeps the structure of [Carbon](https://www.carbondesignsystem.com/), IBM's open-source design system, and replaces its look. Screens then behave like a mature system without looking like an IBM product.
 
 | Foundation | Rule | From Carbon |
 | --- | --- | --- |
@@ -40,25 +40,25 @@ Some effects justify safeguards rather than tactics. The Cashless Effect makes i
 | Icons | An open icon set such as Lucide or Phosphor, and each icon carries the name a screen reader speaks. The verified, spend, refund and test-network icons are reserved for one meaning each. Icons at 16 and 24 px are hand-tuned, not scaled down. | Replace, and use no IBM marks or pictograms |
 | Surfaces | Dark mode shows depth through background layers. High-contrast mode uses borders, because shadows barely show there. | Adapt |
 
-Any product can re-skin Agency Lab by supplying its own token values, because the role names never change.
+Any product can re-skin MREP by supplying its own token values, because the role names never change.
 
 ## Brand assets and identity
 
-**Agency Lab's icon and logo follow the method of Google's Visual Assets Guidelines, not Google's look.** Each rule is shown as a do-and-don't pair, because paired examples are what an AI agent follows best, and every pair doubles as an automated test.
+**MREP's icon and logo follow the method of Google's Visual Assets Guidelines, not Google's look.** Each rule is shown as a do-and-don't pair, because paired examples are what an AI agent follows best, and every pair doubles as an automated test.
 
 | Asset | Rule |
 | --- | --- |
 | Icon | Reductive, geometric, front-facing and flat, and drawn on the pixel grid so it stays crisp. It is redrawn by hand at 16 and 32 px for the browser tab and the GitHub avatar, not shrunk. |
-| Logo lockup | The icon plus the name Agency Lab. As space shrinks it steps down from the full lockup to the icon with a short name, then to the icon alone. Minimum size and clear space are set in multiples of the icon's height. |
+| Logo lockup | The icon plus the name MREP. As space shrinks it steps down from the full lockup to the icon with a short name, then to the icon alone. Minimum size and clear space are set in multiples of the icon's height. |
 | Color versions | Full color, one color, and one color reversed on dark backgrounds, with a short list of approved backgrounds. Status colors never appear in the mark. |
 | Sizes | One table covers the browser tab, the GitHub avatar and social preview, LinkedIn post images and the documentation header. |
-| What not to copy | Google's four-color palette, its long 45-degree shadows, and anything that makes Agency Lab look like an IBM or Google product. |
+| What not to copy | Google's four-color palette, its long 45-degree shadows, and anything that makes MREP look like an IBM or Google product. |
 
-**Identity extends past the logo.** AI agents never see a logo, so Agency Lab's name, its one-sentence description and the same structured details appear identically in agent registries, on payment pages, in the README and in chat answers. Official images carry content credentials under the C2PA standard, so anyone can confirm they are genuine. The open-source license covers the code but not the name or the logo, so Agency Lab's mark stays yours.
+**Identity extends past the logo.** AI agents never see a logo, so MREP's name, its one-sentence description and the same structured details appear identically in agent registries, on payment pages, in the README and in chat answers. Official images carry content credentials under the C2PA standard, so anyone can confirm they are genuine. The open-source license covers the code but not the name or the logo, so MREP's mark stays yours.
 
 ## Components
 
-**Carbon supplies the general components, and Agency Lab builds the money components Carbon lacks.** Those money components are Agency Lab's main public contribution.
+**Carbon supplies the general components, and MREP builds the money components Carbon lacks.** Those money components are MREP's main public contribution.
 
 | Need | Carbon component | Change for money |
 | --- | --- | --- |
@@ -69,9 +69,9 @@ Any product can re-skin Agency Lab by supplying its own token values, because th
 | Status labels | Tag, following Carbon's status-indicator pattern | Color, shape and a text label together |
 | Explainers | Toggletip | Plain-language definitions. Essential information never sits in a tooltip. |
 | Everyday controls | Button, text input, dropdown, toggle, search, date picker, tabs, content switcher, pagination, tile, code snippet | Toggles only for instant, reversible changes such as pausing alerts |
-| Avoided | Number input and progress bar | The number input's arrow keys can nudge an amount, and the progress bar cannot reset, so Agency Lab's own parts replace both |
+| Avoided | Number input and progress bar | The number input's arrow keys can nudge an amount, and the progress bar cannot reset, so MREP's own parts replace both |
 
-**Agency Lab builds nine money components:**
+**MREP builds nine money components:**
 
 - **Amount input:** a text field with its unit, six decimals and no stepper, which shows the value back for confirmation.
 - **Address display:** groups of four with the first and last groups highlighted, a checksum check, a copy button, the full value on request, and output a screen reader can read.
@@ -141,7 +141,7 @@ Readers never see streak counters, random rewards or leaderboards.
 
 **The journey also covers the stages most plans forget.**
 
-| Stage | What Agency Lab provides |
+| Stage | What MREP provides |
 | --- | --- |
 | Get help | Recovery steps for a stuck transaction, a wrong network and a failed signature, an FAQ, GitHub issues for bugs, and a fixed support block in every module |
 | Expand | A documented path from test money to real money that keeps the same limits, confirmations and alerts, published only after an independent contract audit |
@@ -177,7 +177,7 @@ Readers never see streak counters, random rewards or leaderboards.
 
 **The guidelines are maintained like code, because their main contributor is an AI agent that starts every session without memory.**
 
-- **Releases:** numbered releases with a changelog. Renaming or removing a token is a breaking change, so products built on Agency Lab can pin a release and upgrade on purpose. Each part is labeled draft, preview or stable.
+- **Releases:** numbered releases with a changelog. Renaming or removing a token is a breaking change, so products built on MREP can pin a release and upgrade on purpose. Each part is labeled draft, preview or stable.
 - **Decision log:** every approval and rejection goes into a short dated file the agent reads at the start of each session, so it never re-proposes a rejected idea. Public entries double as Build in Public material.
 - **House rules:** an agent instructions file holds the principles, the persuasion policy and your approval step, and a CONTRIBUTING file holds the same rules for people. A proposal template doubles as the agent's brief and checks that Figma matches the code.
 - **Automated checks:** do-and-don't pairs, contrast tests and Carbon's code audit run on every change before it reaches you, and the docs are generated from the code at each release.

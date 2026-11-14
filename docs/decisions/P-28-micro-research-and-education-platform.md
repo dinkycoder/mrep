@@ -4,9 +4,9 @@ Nov 11, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 11, 2026 |
+| Status | Accepted, November 11, 2026; amended by [P-29](P-29-mrep-name-and-path.md), which turned the description into the platform's name |
 | Amends | P-01 (the case study) and P-21 (the committee's economist) |
-| Related | [P-25](P-25-agency-lab-name.md) (the name, unchanged) and [P-26](P-26-measure-agent-genuineness.md) (the Genuineness Estimate) |
+| Related | [P-25](P-25-agency-lab-name.md) (the Agency Lab name, since superseded) and [P-26](P-26-measure-agent-genuineness.md) (the Genuineness Estimate) |
 
 ## Summary
 

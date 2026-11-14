@@ -1,4 +1,4 @@
-# P-26: Agency Lab measures which agent payments come from real agents
+# P-26: MREP measures which agent payments come from real agents
 
 Nov 11, 2026 · @dinky
 
@@ -10,17 +10,17 @@ Nov 11, 2026 · @dinky
 
 ## Summary
 
-**Agency Lab now measures how much agent-payment traffic comes from genuine AI agents rather than scripts, tests or wash trading, because that measurement is the most valuable data in the field and no one publishes a method others can check.** Every headline figure for agent payments is inflated by traffic that only looks like agents paying, so a builder, a payment company or a regulator who reads raw counts reads mostly noise. The Sector Specialist publishes a Genuineness Estimate each quarter: the share of x402 and MPP payments that look genuine, as a range with a confidence band, under a versioned method published in full.
+**MREP now measures how much agent-payment traffic comes from genuine AI agents rather than scripts, tests or wash trading, because that measurement is the most valuable data in the field and no one publishes a method others can check.** Every headline figure for agent payments is inflated by traffic that only looks like agents paying, so a builder, a payment company or a regulator who reads raw counts reads mostly noise. The Sector Specialist publishes a Genuineness Estimate each quarter: the share of x402 and MPP payments that look genuine, as a range with a confidence band, under a versioned method published in full.
 
 Two limits keep the work safe. The desk publishes only totals and shares, never a public verdict that a named address, agent or business is fake, and it reads public ledgers without ever sending a real-money transaction.
 
 ## Context
 
-P-13, accepted on November 7, 2026, kept this work out for three reasons: it needed data access Agency Lab wouldn't have, it needed legal review, and it would turn a teaching desk into a policing one. Each reason now has an answer.
+P-13, accepted on November 7, 2026, kept this work out for three reasons: it needed data access MREP wouldn't have, it needed legal review, and it would turn a teaching desk into a policing one. Each reason now has an answer.
 
 **The data is public.** Every x402 payment on Base and every MPP charge on Tempo settles on a public ledger, so reading it costs nothing and needs no one's permission. Dune's curated agentic-payments dataset already covers x402 and MPP's on-chain Tempo payments in one table.
 
-**Publishing totals avoids the legal risk.** Calling a named address or business fake invites claims of defamation and interference with its business, while a share computed over all traffic accuses no one. TRM Labs and Visa with Artemis publish exactly this kind of total. Agency Lab follows that practice and adds what they leave out: a method anyone can rerun.
+**Publishing totals avoids the legal risk.** Calling a named address or business fake invites claims of defamation and interference with its business, while a share computed over all traffic accuses no one. TRM Labs and Visa with Artemis publish exactly this kind of total. MREP follows that practice and adds what they leave out: a method anyone can rerun.
 
 **A measurement is research, not policing.** The desk reports what share of traffic looks genuine and how sure it is, the same way an economist estimates unemployment without naming who is out of work.
 

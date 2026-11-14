@@ -1,8 +1,8 @@
-# Building AI Agents for Finance: Reading Notes for Agency Lab
+# Building AI Agents for Finance: Reading Notes for MREP
 
 Nov 8, 2026 · Dayn Kirksey
 
-*Building AI Agents for Finance* by Hanane Dupouy and Fayssal El Mofatiche (Packt, August 2026, 758 pages) shapes how Agency Lab's agents spend safely, but it never mentions blockchains, wallets, stablecoins or agent payments. Its central rule is that the model is one component and the system around it is the product, which is exactly Agency Lab's bet. Page numbers below are the book's own.
+*Building AI Agents for Finance* by Hanane Dupouy and Fayssal El Mofatiche (Packt, August 2026, 758 pages) shapes how MREP's agents spend safely, but it never mentions blockchains, wallets, stablecoins or agent payments. Its central rule is that the model is one component and the system around it is the product, which is exactly MREP's bet. Page numbers below are the book's own.
 
 ## The book at a glance
 
@@ -23,15 +23,15 @@ Nov 8, 2026 · Dayn Kirksey
 
 ## Rules we adopt
 
-Twelve rules from the book change what we build, and most of them come from chapter 12, because Agency Lab is mainly the safety machinery around an agent that spends money.
+Twelve rules from the book change what we build, and most of them come from chapter 12, because MREP is mainly the safety machinery around an agent that spends money.
 
-| Rule | Pages | In Agency Lab |
+| Rule | Pages | In MREP |
 | --- | --- | --- |
 | Retry reads freely, but never blindly retry an action; protect actions with idempotency keys and, usually, human approval | 625–641 | Balance and price reads retry with backoff; every payment carries an idempotency key, and `SpendConfirmation`'s double-send guard is the human layer |
 | Enforce permissions in the harness, not the prompt | 625–641 | The allowance lives in the agent's smart wallet, which enforces its budget, expiry and allowed recipients on Base, and a write-back gate that fails closed checks it before signing, so a fooled model or a crashed check still can't overspend (roadmap P-05, P-06) |
 | Secrets never reach the model | 625–641 | The wallet key is created inside AWS KMS and signs there, so it never appears in prompts, tool descriptions, context, files or logs (roadmap P-06) |
 | Budgets are risk limits, and "insufficient evidence" is a valid answer | 641–647 | Every agent run has turn and token budgets, a repeat-call detector and a cost ceiling that switches to a cheaper model at 90% and stops at 100%, alongside the money limit (roadmap P-10) |
-| Assign every action an autonomy tier: inform, propose, act with approval, or act and report | 680–685 | The book reserves act-and-report for low-risk, reversible actions, and payments are final, so Agency Lab makes them low-risk instead: small amounts, an allowance the smart wallet enforces and money-back escrow. Anything above the limit or to a new recipient moves up to act-with-approval |
+| Assign every action an autonomy tier: inform, propose, act with approval, or act and report | 680–685 | The book reserves act-and-report for low-risk, reversible actions, and payments are final, so MREP makes them low-risk instead: small amounts, an allowance the smart wallet enforces and money-back escrow. Anything above the limit or to a new recipient moves up to act-with-approval |
 | Guard three points (input, tool output, final output) with allow, block, redact or escalate, running deterministic checks first | 666–680 | x402 payment requests and vendor responses are tool outputs: treat them as data, and check the price against the limit in code before any model sees it |
 | One audit record binds the request, evidence, trace, version, guardrail decisions, conclusion and approver | 509–512, 680–685 | The statements module is that record, anchored by transaction hashes and rebuildable from the chain, and a near-miss log keeps every refused or escalated attempt beside it (roadmap P-10, P-11) |
 | A version pins the model, prompts, tools and configuration, and a prompt change is a code change | 661–666 | Every deploy writes a release manifest that pins exact model IDs, prompt hashes, tool versions, contract addresses and limits (roadmap P-10) |
@@ -50,7 +50,7 @@ The book never mentions blockchains, smart contracts, wallets, stablecoins, x402
 
 Hanane Dupouy's own notebook collection, [hananedupouy/LLMs-in-Finance](https://github.com/hananedupouy/LLMs-in-Finance/tree/d6d4d4e18d5cc88e326e435e4ecba26278dd6b85), turns several of the book's evaluation and cost rules into runnable code under the MIT license. We link to it rather than copy it in, and every link below is pinned to commit `d6d4d4e` (November 1, 2026), the version reviewed, so the files can't change underneath us. The repo is for education rather than production, and like the book it never covers blockchains or payments.
 
-| Notebook | What it shows | In Agency Lab |
+| Notebook | What it shows | In MREP |
 | --- | --- | --- |
 | [Trajectory evals with Phoenix](https://github.com/hananedupouy/LLMs-in-Finance/blob/d6d4d4e18d5cc88e326e435e4ecba26278dd6b85/Agents/observability_tracing/trajectory_evals_financial_ai_agent_OpenAI_Agents_SDK_Phoenix.ipynb) | An agent gives the right number without calling the approved calculator, and a check on the path it took, rather than the answer, catches it; the tracing runs on your own machine | Prove every spend passed the limit check and every amount came from code |
 | [Prompt caching with Anthropic](https://github.com/hananedupouy/LLMs-in-Finance/blob/d6d4d4e18d5cc88e326e435e4ecba26278dd6b85/RAG/Anthropic/Anthropic_Prompt_Caching.ipynb) and [with OpenAI in a RAG workflow](https://github.com/hananedupouy/LLMs-in-Finance/blob/d6d4d4e18d5cc88e326e435e4ecba26278dd6b85/RAG/llamaindex/PromptCaching_RAG_Workflow.ipynb) | Reusing a cached prompt prefix, so agents that re-read the same material cost less and answer faster | Cheaper runs when agents re-read the same docs or statements |

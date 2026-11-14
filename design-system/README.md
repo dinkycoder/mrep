@@ -1,8 +1,8 @@
-# Agency Lab Design System
+# MREP Design System
 
-The style guide, tokens and money components for Agency Lab. It mirrors the editable Design System artifact; the PDF is in [docs/pdf](../docs/pdf/Agency%20Lab%20Design%20System.pdf). Open any `components/<Name>/preview.html` in a browser to see a component, and add `data-theme="dark"` or `data-theme="high-contrast"` to its `<html>` tag to switch themes.
+The style guide, tokens and money components for MREP. It mirrors the editable Design System artifact; the PDF is in [docs/pdf](../docs/pdf/MREP%20Design%20System.pdf). Open any `components/<Name>/preview.html` in a browser to see a component, and add `data-theme="dark"` or `data-theme="high-contrast"` to its `<html>` tag to switch themes.
 
-Agency Lab helps AI builders give their agents money safely, one small win at a time. It is an open-source Micro Research and Education Platform (MREP) for agentic commerce, on AWS and Base, built in public one module at a time, and an MSAIE capstone. The interface is calm, exact and honest: it shows what will happen to money before anything happens, and it never pressures anyone. Its structure follows Carbon, IBM's open-source design system, with Agency Lab's own look.
+MREP, the Micro Research and Education Platform, helps AI builders give their agents money safely, one small win at a time. It is Kirksey Research's open-source research and education platform for agentic commerce, on AWS and Base, built in public one module at a time, and an MSAIE capstone. The interface is calm, exact and honest: it shows what will happen to money before anything happens, and it never pressures anyone. Its structure follows Carbon, IBM's open-source design system, with MREP's own look.
 
 ## Principles
 
@@ -99,13 +99,13 @@ Motion explains a change in money; it never decorates.
   - triangle-alert means warning
   - x-circle means failed
 - **Small sizes.** Icons at 16px are drawn for that size, not shrunk.
-- **No logo yet.** Agency Lab has no mark yet, so set the name in `heading-03` in `text-primary`. Never borrow IBM or Google marks, pictograms or palettes.
+- **No logo yet.** MREP has no mark yet, so set the name in `heading-03` in `text-primary`. Never borrow IBM or Google marks, pictograms or palettes.
 
 ## Components
 
 General components come from Carbon (`@carbon/react` or `@carbon/web-components`, with `CARBON_TELEMETRY_DISABLED=1`), styled through these tokens. These include buttons, text inputs, dropdowns, toggles, the data table, notifications, the modal, inline loading, tags, toggletips, tabs, the content switcher, pagination, search and the date picker. Don't use Carbon's number input or progress bar for money: their arrow keys can nudge an amount, and the bar cannot reset.
 
-Agency Lab adds the money components Carbon lacks:
+MREP adds the money components Carbon lacks:
 
 - `SpendConfirmation`: the dialog before any spend, approval or signature.
 - `AmountInput`: a text field for amounts with unit and six decimals.

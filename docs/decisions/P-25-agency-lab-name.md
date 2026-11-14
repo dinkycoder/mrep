@@ -4,7 +4,7 @@ Nov 8, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 8, 2026 |
+| Status | Superseded by [P-29](P-29-mrep-name-and-path.md), November 14, 2026; kept as a dated record of the Agency Lab name |
 | Supersedes | P-16 (keep the Ambition name) |
 | Related | [P-23](P-23-aws-platform.md) (AWS), [P-24](P-24-base-chain.md) (Base) and [P-28](P-28-micro-research-and-education-platform.md) (the Micro Research and Education Platform description) |
 

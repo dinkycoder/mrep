@@ -1,4 +1,4 @@
-# P-27: Tempo and MPP become Agency Lab's second measured rail
+# P-27: Tempo and MPP become MREP's second measured rail
 
 Nov 11, 2026 · @dinky
 
@@ -10,7 +10,7 @@ Nov 11, 2026 · @dinky
 
 ## Summary
 
-**Agency Lab keeps building on Base, and it adds Tempo, with the Machine Payments Protocol (MPP), as the second rail it measures and teaches, because the field now has two agent-payment standards and a referee that watches only one cannot call itself neutral.** Tempo is a blockchain built for stablecoin payments by Stripe and Paradigm, and MPP is the payment standard Stripe and Tempo wrote for it. Like x402, MPP lets a server answer a request with "402 Payment Required" and lets an agent pay and retry.
+**MREP keeps building on Base, and it adds Tempo, with the Machine Payments Protocol (MPP), as the second rail it measures and teaches, because the field now has two agent-payment standards and a referee that watches only one cannot call itself neutral.** Tempo is a blockchain built for stablecoin payments by Stripe and Paradigm, and MPP is the payment standard Stripe and Tempo wrote for it. Like x402, MPP lets a server answer a request with "402 Payment Required" and lets an agent pay and retry.
 
 Base stays the build chain because x402 on Base still carries far more money and records each payment on the chain, which is what the Genuineness Estimate needs. A clear trigger reopens that choice if MPP overtakes it.
 
@@ -26,7 +26,7 @@ Base stays the build chain because x402 on Base still carries far more money and
 
 ## Decision
 
-**Base remains the only network Agency Lab builds on, and Tempo joins as the second rail it measures and teaches.**
+**Base remains the only network MREP builds on, and Tempo joins as the second rail it measures and teaches.**
 
 | Row | Before | After |
 | --- | --- | --- |
