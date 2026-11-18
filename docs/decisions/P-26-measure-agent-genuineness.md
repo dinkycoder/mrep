@@ -4,7 +4,7 @@ Nov 11, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 11, 2026; amended November 17, 2026 to measure the settlement denomination alongside genuineness |
+| Status | Accepted, November 11, 2026; amended November 17, 2026 to measure the settlement denomination alongside genuineness, and November 18, 2026 by P-31, which rewrites rule R17 by audience |
 | Supersedes | P-13 (the charter excluded measuring fake or wash agent activity) |
 | Related | [P-24](P-24-base-chain.md) (Base), [P-27](P-27-tempo-second-rail.md) (Tempo) and [P-28](P-28-micro-research-and-education-platform.md) (the platform's description) |
 
@@ -42,7 +42,7 @@ P-13, accepted on November 7, 2026, kept this work out for three reasons: it nee
 
 **The Sector Specialist owns the Genuineness Estimate, and it follows seven rules.**
 
-1. **Totals only in public.** Briefs report shares and counts over all traffic or over named segments, such as a facilitator or a price band, never a verdict on an identifiable address, agent or business. The Compliance Agent fails any brief that does (rule R17).
+1. **Totals only in public.** Briefs report shares and counts over all traffic or over named segments, such as a facilitator or a price band, never a verdict on an identifiable address, agent or business. The Compliance Agent fails any brief that does (rule R17). [P-31](P-31-agent-reputation-credit-gate.md) rewrites this rule by audience: public outputs stay as described here, while a private verdict on a named agent may go, under contract, to a party with a decision to make about it, never published or resold.
 2. **A range, not a point.** Each estimate gives a permissive and a strict share, in the style of TRM's two tests, with a confidence band and estimative words ("likely", "almost certainly") defined in the glossary.
 3. **A published, versioned method.** The signals, thresholds and code version that produced an estimate are published with it, and a method change takes a new version number and a rerun of the previous quarter, so a change in the estimate can be told apart from a change in the method.
 4. **Labeled examples from known sources.** The desk's own instrumented agents produce payments known to be genuine, and a deliberately simple scripted bot produces payments known to be scripted, both on test networks. These labels calibrate the method; because testnet behavior only approximates mainnet, the published shares come from mainnet signals, and the labels never stand in for them.

@@ -4,7 +4,7 @@ Nov 11, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 11, 2026; amended by [P-29](P-29-mrep-name-and-path.md), which turned the description into the platform's name |
+| Status | Accepted, November 11, 2026; amended by [P-29](P-29-mrep-name-and-path.md), which turned the description into the platform's name, and amended by P-31 on November 18, 2026, which makes education the channel rather than a half of the platform |
 | Amends | P-01 (the case study) and P-21 (the committee's economist) |
 | Related | [P-25](P-25-agency-lab-name.md) (the Agency Lab name, since superseded) and [P-26](P-26-measure-agent-genuineness.md) (the Genuineness Estimate) |
 

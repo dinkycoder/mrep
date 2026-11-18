@@ -230,7 +230,7 @@ Every estimate measures commerce by agents; none measures spending on agents or 
 | R14 Data licenses | [FRED](https://fred.stlouisfed.org/docs/api/terms_of_use.html), [DefiLlama](https://defillama.com/terms), [CoinGecko](https://brand.coingecko.com/resources/attribution-guide), [EDGAR](https://www.sec.gov/os/accessing-edgar-data) terms | License class per data point | Fail |
 | R15 Accessibility, WCAG 2.2 AA | DOJ Title II dates extended to April 2027 and 2028 | Automated checks plus judge | Fail, or escalate judgment calls |
 | R16 Disclaimer block | Book design | Template check | Fail |
-| R17 No public verdict on a named party | P-26 and P-30, where this sits in the forbidden action class; defamation and trade-libel risk | Pattern check for an address, agent or business name beside "fake", "wash" or "scripted", plus judge | Fail |
+| R17 No public verdict on a named party (P-31 permits a private one, under contract, to a party deciding about that agent) | P-26, P-30, where this sits in the forbidden action class, and P-31; defamation and trade-libel risk | Pattern check for an address, agent or business name beside "fake", "wash" or "scripted", plus judge | Fail |
 
 | Tool | What it does | Cost and limits | Checked |
 | --- | --- | --- | --- |

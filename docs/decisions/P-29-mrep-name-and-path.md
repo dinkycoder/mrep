@@ -4,7 +4,7 @@ Nov 14, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 14, 2026; amended the same day so that MREP and Kirksey Research are working names |
+| Status | Accepted, November 14, 2026; amended the same day so that MREP and Kirksey Research are working names, and amended by [P-31](P-31-agent-reputation-credit-gate.md) on November 18, 2026, which replaces the positioning statement's second sentence |
 | Supersedes | P-25 (the platform's name is Agency Lab) |
 | Amends | P-28 (MREP as a description rather than a name) and P-14 (repository addresses) |
 | Related | [P-26](P-26-measure-agent-genuineness.md), [P-27](P-27-tempo-second-rail.md), [P-28](P-28-micro-research-and-education-platform.md) and [P-30](P-30-agent-authorization-and-validation.md) |
@@ -42,7 +42,7 @@ Kirksey Research is the agentic commerce intelligence company that makes MREP. T
 >
 > AI programs have begun buying data, computing power and tools on their own, a few cents at a time, and MREP is a research and education platform that measures those payments and teaches people to build them safely. It is needed because the published numbers cannot be trusted: nearly 200 million such payments have been recorded, yet one major study judged that under 8% of the spending it screened came from real AI agents, with the rest scripts, tests and inflated volume. Anyone who builds, funds, insures or regulates in this market is deciding on those numbers, and MREP gives them numbers they can check.
 
-The statement was written before the re-aiming described above, so its second sentence, which calls MREP a research and education platform, is rewritten when the final name is chosen.
+The statement was written before the re-aiming described above, so its second sentence, which calls MREP a research and education platform, no longer holds: [P-31](P-31-agent-reputation-credit-gate.md) makes the product the score that decides whether an agent can be trusted with money, and the full statement is rewritten with the final name.
 
 **The thesis MREP tests is stated as a claim, never asserted.** A widely argued view holds that agents will move commerce onto blockchains, because an agent can hold a key but cannot open a bank account, and because fees on the existing rails cannot fall to zero while an intermediary sits in the path. MREP measures whether that is happening: how much agent spending is genuine, on which rails, at what cost, and which intermediaries remain in the path. The desk neither endorses nor dismisses the claim, makes no price calls and recommends no asset, because a referee that cheers is not believed.
 
