@@ -1,10 +1,14 @@
 # P-31: MREP's product is the reputation that gates agent credit
 
-Nov 18, 2026 · @dinky
+Nov 19, 2026 · @dinky
+
+> *"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world."*
+>
+> — attributed to Archimedes
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 18, 2026; ladder extended November 18 to rungs C and D with the savings mechanism and the yield-rule dependency, and November 19 to rung E and a summit of financial security measured by the resilience indicator |
+| Status | Accepted, November 18, 2026; extended November 18 to stages C and D with the savings mechanism and the yield-rule dependency, and November 19 to stage E, a load of financial security measured by the resilience indicator, and the lever metaphor replacing the earlier one |
 | Amends | P-26 (rule R17, and who receives a verdict), P-28 (education as a line of the platform) and P-29 (the positioning statement's second sentence) |
 | Related | [P-24](P-24-base-chain.md) (Base), [P-27](P-27-tempo-second-rail.md) (Tempo and MPP), [P-30](P-30-agent-authorization-and-validation.md) (action classes) |
 
@@ -52,34 +56,34 @@ Nov 18, 2026 · @dinky
 
 **The relationship with the identity vendors is complementary by design.** They attest what an agent is and who stands behind it; MREP prices what it has done. The platform therefore sells beside them and to them, and it does not build identity attestation, which would put it in the business it depends on.
 
-## The ladder
+## The lever
 
-**Read from the bottom. Each rung is what becomes possible once the rung below works, and the dates are estimates while the order is not.**
+**A lever needs two things: a fulcrum placed precisely, and length.** The fulcrum is stage A, the record of what an agent has actually done, and it is placed first because nothing above it bears weight until it holds. Every stage after it lengthens the lever, and length is where a lever's force comes from. Read from the bottom: each stage becomes possible once the stage below works, the dates are estimates and the order is not. A lever also trades distance for force, which is the honest description of a decade — the long arm travels a long way to shift the load at all.
 
-| Horizon | Rung | How we would know we got there |
+| Horizon | Stage | How we would know we got there |
 | --- | --- | --- |
-| **The summit** | **Help 1 billion people become financially secure.** | The share of financially resilient adults in low- and middle-income economies finally moves |
+| **The load** | **Help 1 billion people become financially secure.** | The share of financially resilient adults in low- and middle-income economies finally moves |
 | E · 2036+ | Risk-sharing priced on behavior: insurance and liability for the same actors, because a scoreable actor is an insurable one | A smallholder insures a harvest at a premium set by conduct rather than by postcode |
 | D · 2033–35 | Credit priced on behavior rather than inheritance: the record built at B and C becomes the basis for borrowing, for the people a bureau has never heard of | A micro-business borrows against its agent's payment history, with no collateral and no inherited file |
 | C · 2030–32 | Everybody's money earns interest: an agent puts an ordinary saver's money where it earns, and the reputation travels with them so a provider can accept them without a credit file | Interest earned on a balance stops tracking the size of the balance |
 | B · 2028–29 | Agents hold and manage balances, because trust is solved: sweeping idle funds to where they earn, paying bills, holding float, with no person in the loop | The cost of serving a $40 account falls below what that account earns |
 | A · 2027 | MREP: reputation that makes an agent trustworthy with money, measured on Base and Tempo, with a published method | A wallet provider or lender calls the score before it sets an agent's limit |
 
-### The summit, defined
+### The load, defined
 
-**Financially secure is not a feeling, and it is not ours to define.** The World Bank counts an adult as financially resilient if they could raise an emergency sum equal to 5% of their country's income per head within 30 days. In low- and middle-income economies 56% can, a figure unchanged since 2021, even as account ownership worldwide rose 28 points from 2011 to reach 79%. Access went up and security did not move, which is the single fact that puts security at the summit of this ladder instead of interest: the interest rung can be climbed in full while the outcome stays where it is.
+**Financially secure is not a feeling, and it is not ours to define.** The World Bank counts an adult as financially resilient if they could raise an emergency sum equal to 5% of their country's income per head within 30 days. In low- and middle-income economies 56% can, a figure unchanged since 2021, even as account ownership worldwide rose 28 points from 2011 to reach 79%. Access went up and security did not move, which is the single fact that puts security at the load end of this lever instead of interest: stage C can be reached in full while the outcome stays where it is.
 
-**The 44% who cannot are more than a billion adults**, and for them a hospital bill, a failed harvest or a lost month of work is paid for by selling the thing they built. A billion is therefore a dent in the gap rather than a claim to close it. The precise count of that 44% is available in the Findex microdata and is left to be pulled properly rather than estimated here.
+**The 44% who cannot are more than a billion adults**, and for them a hospital bill, a failed harvest or a lost month of work is paid for by selling the thing they built. That load is what the lever is for, and a billion is a dent in the gap rather than a claim to close it. The precise count of that 44% is available in the Findex microdata and is left to be pulled properly rather than estimated here.
 
 **MREP's contribution is one link in that chain, not the whole of it:** a record of what an agent has actually done, so that a saver can earn, borrow and insure on terms priced by their own conduct rather than by the file they do not have. The parties who would have to adopt it are named in the dependencies below, because a referee who overstates his own part is the one thing this positioning cannot afford.
 
-**Rungs C and D are where the billion people are, and the arithmetic is not about the unbanked.** The World Bank's Global Findex 2025 counts 1.3 billion adults still unbanked, but the larger and less-cited number is that roughly 40% of adults in low- and middle-income economies now save formally while 77% of them, close to 1.4 billion savers, receive no interest at all on those deposits, and about 4.7 billion adults lack access to credit or loans. The people at rung C already hold a formal balance, so they do not have to be banked first. Distribution already exists too: around 900 million unbanked adults own a mobile phone and roughly 530 million own a smartphone.
+**Stages C and D are where the billion people are, and the arithmetic is not about the unbanked.** The World Bank's Global Findex 2025 counts 1.3 billion adults still unbanked, but the larger and less-cited number is that roughly 40% of adults in low- and middle-income economies now save formally while 77% of them, close to 1.4 billion savers, receive no interest at all on those deposits, and about 4.7 billion adults lack access to credit or loans. The people at stage C already hold a formal balance, so they do not have to be banked first. Distribution already exists too: around 900 million unbanked adults own a mobile phone and roughly 530 million own a smartphone.
 
-**The benefits compound rather than add, which is why the ladder is worth climbing in this order.** At low incomes the first gain is not a return but the halt of a loss, because an idle balance in a high-inflation currency shrinks while a yield-bearing one does not. Interest then accelerates the formation of a buffer, and a buffer is what stops a health shock becoming a debt spiral. An account that earns and spends generates a record, and a record is what substitutes for the collateral these households do not have, which is the bridge from C to D. And the reason none of this exists today is cost: a human relationship costs more than a $40 balance yields, so agents are the only thing that drives the marginal cost of serving the long tail toward zero.
+**The benefits compound rather than add, which is why the lever is built in this order.** At low incomes the first gain is not a return but the halt of a loss, because an idle balance in a high-inflation currency shrinks while a yield-bearing one does not. Interest then accelerates the formation of a buffer, and a buffer is what stops a health shock becoming a debt spiral. An account that earns and spends generates a record, and a record is what substitutes for the collateral these households do not have, which is the bridge from C to D. And the reason none of this exists today is cost: a human relationship costs more than a $40 balance yields, so agents are the only thing that drives the marginal cost of serving the long tail toward zero.
 
-**One dependency sits behind rung C, and belongs in the pitch rather than hidden from it.** The GENIUS Act prohibits payment stablecoin issuers from paying holders any interest or yield solely for holding the token, which is why an exchange can pay rewards on a USDC balance that the issuer legally cannot. Proposed rules extend that prohibition to affiliates and related third parties, and the CLARITY Act's Section 404 would permit rewards tied to transactions while prohibiting passive accrual on idle balances. A plan resting on passive yield is therefore built on a fault line, and a plan resting on yield earned through use is not — which is the form MREP's own subject takes, since an agent is by definition something that transacts rather than something that sits. The platform does not need the passive case to survive, and the record says so rather than assuming the rules hold.
+**One dependency sits behind stage C, and belongs in the pitch rather than hidden from it.** The GENIUS Act prohibits payment stablecoin issuers from paying holders any interest or yield solely for holding the token, which is why an exchange can pay rewards on a USDC balance that the issuer legally cannot. Proposed rules extend that prohibition to affiliates and related third parties, and the CLARITY Act's Section 404 would permit rewards tied to transactions while prohibiting passive accrual on idle balances. A plan resting on passive yield is therefore built on a fault line, and a plan resting on yield earned through use is not — which is the form MREP's own subject takes, since an agent is by definition something that transacts rather than something that sits. The platform does not need the passive case to survive, and the record says so rather than assuming the rules hold.
 
-**Two further dependencies are outside MREP's control.** The ladder only reaches rung C if the wallets and providers actually serving these populations adopt the primitive, and local capital controls can block access to a dollar-denominated balance whatever the technology does. Neither changes the order of A through E.
+**Two further dependencies are outside MREP's control.** The lever only reaches stage C if the wallets and providers actually serving these populations adopt the primitive, and local capital controls can block access to a dollar-denominated balance whatever the technology does. Neither changes the order of A through E.
 
 **The counter-vision is the world if nobody builds it.** Either agent commerce stays stuck at sub-cent scripts, because no one will risk real money on an actor they cannot assess, or real money arrives first and the category's rules are written around whatever the first large agent fraud looks like.
 
@@ -120,7 +124,7 @@ Nov 18, 2026 · @dinky
 
 ## Revisit when
 
-At the first interview round, if the answer to the spend-limit question is that nobody is yet deciding anything; when the anchor is chosen, which amends this record; at the Base application, whether or not it succeeds; if an identity vendor ships observed-behavior scoring of its own, which would make this a feature rather than a company; and when the rules on stablecoin rewards settle, since rungs C and D assume yield earned through use rather than accrued on an idle balance.
+At the first interview round, if the answer to the spend-limit question is that nobody is yet deciding anything; when the anchor is chosen, which amends this record; at the Base application, whether or not it succeeds; if an identity vendor ships observed-behavior scoring of its own, which would make this a feature rather than a company; and when the rules on stablecoin rewards settle, since stages C and D assume yield earned through use rather than accrued on an idle balance.
 
 ## Sources
 
@@ -132,4 +136,4 @@ At the first interview round, if the answer to the spend-limit question is that 
 - World Bank, [Global Findex 2025](https://www.worldbank.org/en/publication/globalfindex), for the unbanked count, the share of adults with an account, and mobile-phone ownership among the unbanked
 - Binance Research, [Finance without frontiers](https://www.binance.com/research/analysis/finance-without-frontiers) (May 2026), for the count of formal savers who earn no interest and of adults without access to credit, and for its definition of underbanked
 - Congressional Research Service, [The stablecoin yield debate](https://www.everycrsreport.com/reports/IF13174.html) and [GENIUS Act (P.L. 119-27)](https://www.everycrsreport.com/reports/R49351.html), for the issuer yield prohibition and the exchange gap
-- Naveen Jain, as set out in *The Ten-Year Pitch Workbook* (Extraordinary Minds, November 2026), for the ladder, the counter-vision and the test that a message stands for something the buyer already wants
+- Naveen Jain, as set out in *The Ten-Year Pitch Workbook* (Extraordinary Minds, November 2026), for the staged structure, the counter-vision and the test that a message stands for something the buyer already wants
