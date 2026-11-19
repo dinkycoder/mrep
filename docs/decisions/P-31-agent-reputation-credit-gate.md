@@ -4,7 +4,7 @@ Nov 18, 2026 · @dinky
 
 | Field | Value |
 | --- | --- |
-| Status | Accepted, November 18, 2026 |
+| Status | Accepted, November 18, 2026; ladder extended the same day to rungs C and D, the savings mechanism and the yield-rule dependency |
 | Amends | P-26 (rule R17, and who receives a verdict), P-28 (education as a line of the platform) and P-29 (the positioning statement's second sentence) |
 | Related | [P-24](P-24-base-chain.md) (Base), [P-27](P-27-tempo-second-rail.md) (Tempo and MPP), [P-30](P-30-agent-authorization-and-validation.md) (action classes) |
 
@@ -54,17 +54,23 @@ Nov 18, 2026 · @dinky
 
 ## The ladder
 
-**Read from the bottom. Each rung is what becomes possible once the rung below works.**
+**Read from the bottom. Each rung is what becomes possible once the rung below works, and the dates are estimates while the order is not.**
 
-| | |
-| --- | --- |
-| **The world** | **Anyone can send software out to earn and spend on their behalf, and be trusted with it.** |
-| Rung 4 | Agents transact at sizes that matter, because an underwritten actor can also be insured and held liable, and markets form around that |
-| Rung 3 | The score becomes a primitive other contracts read, so limits are set programmatically instead of a person approving each move |
-| Rung 2 | A score: a wallet or lender can decide about an agent it has never seen before |
-| Year 1 | Labeled ground truth: telling a genuine agent from a script, on Base, with a published method |
+| Horizon | Rung | How we would know we got there |
+| --- | --- | --- |
+| **The world** | **Imagine living in a world where everybody earned high yield interest on their money.** | — |
+| D · 2033–35 | Credit priced on behavior rather than inheritance: the record built at B and C becomes the basis for borrowing, for the people a bureau has never heard of | A micro-business borrows against its agent's payment history, with no collateral and no inherited file |
+| C · 2030–32 | Everybody's balance earns: an agent puts an ordinary saver's money where it earns, and the reputation travels with them so a provider can accept them without a credit file | Interest earned on a balance stops tracking the size of the balance |
+| B · 2028–29 | Agents hold and manage balances, because trust is solved: sweeping idle funds to where they earn, paying bills, holding float, with no person in the loop | The cost of serving a $40 account falls below what that account earns |
+| A · 2027 | MREP: reputation that makes an agent trustworthy with money, measured on Base and Tempo, with a published method | A wallet provider or lender calls the score before it sets an agent's limit |
 
-**The reason this reaches a billion people is specific, and the dependency is named.** Credit today is granted against an inherited file: a bureau record, collateral, or a relationship someone's family already had. The people without a bank account, and the far larger group who have one but no credit file, are excluded by the absence of a record rather than by their conduct. A reputation assembled from observed behavior is a different basis, because a micro-business whose agent has paid for inventory reliably for eighteen months holds a record it generated itself. That is the mechanism. The dependency, which belongs in the pitch rather than hidden from it, is that it only reaches those people if the wallets and lenders serving them adopt the primitive, which is not MREP's to control.
+**Rungs C and D are where the billion people are, and the arithmetic is not about the unbanked.** The World Bank's Global Findex 2025 counts 1.3 billion adults still unbanked, but the larger and less-cited number is that roughly 40% of adults in low- and middle-income economies now save formally while 77% of them, close to 1.4 billion savers, receive no interest at all on those deposits, and about 4.7 billion adults lack access to credit or loans. The people at rung C already hold a formal balance, so they do not have to be banked first. Distribution already exists too: around 900 million unbanked adults own a mobile phone and roughly 530 million own a smartphone.
+
+**The benefits compound rather than add, which is why the ladder is worth climbing in this order.** At low incomes the first gain is not a return but the halt of a loss, because an idle balance in a high-inflation currency shrinks while a yield-bearing one does not. Interest then accelerates the formation of a buffer, and a buffer is what stops a health shock becoming a debt spiral. An account that earns and spends generates a record, and a record is what substitutes for the collateral these households do not have, which is the bridge from C to D. And the reason none of this exists today is cost: a human relationship costs more than a $40 balance yields, so agents are the only thing that drives the marginal cost of serving the long tail toward zero.
+
+**One dependency sits inside the vision line itself, and belongs in the pitch rather than hidden from it.** The GENIUS Act prohibits payment stablecoin issuers from paying holders any interest or yield solely for holding the token, which is why an exchange can pay rewards on a USDC balance that the issuer legally cannot. Proposed rules extend that prohibition to affiliates and related third parties, and the CLARITY Act's Section 404 would permit rewards tied to transactions while prohibiting passive accrual on idle balances. A plan resting on passive yield is therefore built on a fault line, and a plan resting on yield earned through use is not — which is the form MREP's own subject takes, since an agent is by definition something that transacts rather than something that sits. The platform does not need the passive case to survive, and the record says so rather than assuming the rules hold.
+
+**Two further dependencies are outside MREP's control.** The ladder only reaches rung C if the wallets and providers actually serving these populations adopt the primitive, and local capital controls can block access to a dollar-denominated balance whatever the technology does. Neither changes the order of A through D.
 
 **The counter-vision is the world if nobody builds it.** Either agent commerce stays stuck at sub-cent scripts, because no one will risk real money on an actor they cannot assess, or real money arrives first and the category's rules are written around whatever the first large agent fraud looks like.
 
@@ -72,7 +78,7 @@ Nov 18, 2026 · @dinky
 
 **Three-year vision.** MREP scores agent payment behavior on Base and Tempo, a handful of wallet providers and lenders call it before they set an agent's spending limit, the method is published and has been rerun by someone outside the company, and the quarterly series on genuineness and denomination is cited by people arguing about the size of the agent economy.
 
-**Ten-year vision.** Software agents hold working capital on their own records. A person or a small business can send an agent out to earn and spend, and the counterparties it meets can price its trustworthiness in milliseconds without knowing who its owner banks with. MREP is the record those counterparties read.
+**Ten-year vision.** Imagine living in a world where everybody earned high yield interest on their money. Software agents hold and manage balances on their own records, so a saver with forty dollars is served as cheaply as one with forty thousand, and the counterparties their agent meets can price its trustworthiness in milliseconds without knowing who its owner banks with. MREP is the record those counterparties read.
 
 ## What happens next, and the gate
 
@@ -105,7 +111,7 @@ Nov 18, 2026 · @dinky
 
 ## Revisit when
 
-At the first interview round, if the answer to the spend-limit question is that nobody is yet deciding anything; when the anchor is chosen, which amends this record; at the Base application, whether or not it succeeds; and if an identity vendor ships observed-behavior scoring of its own, which would make this a feature rather than a company.
+At the first interview round, if the answer to the spend-limit question is that nobody is yet deciding anything; when the anchor is chosen, which amends this record; at the Base application, whether or not it succeeds; if an identity vendor ships observed-behavior scoring of its own, which would make this a feature rather than a company; and when the rules on stablecoin rewards settle, since rungs C and D assume yield earned through use rather than accrued on an idle balance.
 
 ## Sources
 
@@ -114,4 +120,7 @@ At the first interview round, if the answer to the spend-limit question is that 
 - Crypto Briefing, [Base opens applications for its fourth accelerator cohort](https://cryptobriefing.com/base-batches-004-investing-1m-startups/), and Base, [Base Batches](https://docs.base.org/get-started/base-batches), for the cohort size, the investment and the twice-yearly cadence
 - Keyrock, *Who pays the agent*, as [reported by Bitcoin.com](https://news.bitcoin.com/keyrock-report-76-of-ai-agent-transactions-fall-below-visas-0-30-fee-floor/), for the size and denomination of measured agent settlement
 - PR Newswire, [Beltic emerges from stealth](https://www.prnewswire.com/news-releases/beltic-emerges-from-stealth-to-secure-autonomous-agent-transactions-at-scale-302614000.html), for the agent-verification category and its funding
+- World Bank, [Global Findex 2025](https://www.worldbank.org/en/publication/globalfindex), for the unbanked count, the share of adults with an account, and mobile-phone ownership among the unbanked
+- Binance Research, [Finance without frontiers](https://www.binance.com/research/analysis/finance-without-frontiers) (May 2026), for the count of formal savers who earn no interest and of adults without access to credit, and for its definition of underbanked
+- Congressional Research Service, [The stablecoin yield debate](https://www.everycrsreport.com/reports/IF13174.html) and [GENIUS Act (P.L. 119-27)](https://www.everycrsreport.com/reports/R49351.html), for the issuer yield prohibition and the exchange gap
 - Naveen Jain, as set out in *The Ten-Year Pitch Workbook* (Extraordinary Minds, November 2026), for the ladder, the counter-vision and the test that a message stands for something the buyer already wants
