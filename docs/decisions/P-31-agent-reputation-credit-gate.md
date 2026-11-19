@@ -58,7 +58,7 @@ Nov 18, 2026 · @dinky
 
 | Horizon | Rung | How we would know we got there |
 | --- | --- | --- |
-| **The world** | **Imagine living in a world where everybody earned high yield interest on their money.** | — |
+| **The world** | **Imagine a world where everybody's money earns interest.** | — |
 | D · 2033–35 | Credit priced on behavior rather than inheritance: the record built at B and C becomes the basis for borrowing, for the people a bureau has never heard of | A micro-business borrows against its agent's payment history, with no collateral and no inherited file |
 | C · 2030–32 | Everybody's balance earns: an agent puts an ordinary saver's money where it earns, and the reputation travels with them so a provider can accept them without a credit file | Interest earned on a balance stops tracking the size of the balance |
 | B · 2028–29 | Agents hold and manage balances, because trust is solved: sweeping idle funds to where they earn, paying bills, holding float, with no person in the loop | The cost of serving a $40 account falls below what that account earns |
@@ -68,7 +68,7 @@ Nov 18, 2026 · @dinky
 
 **The benefits compound rather than add, which is why the ladder is worth climbing in this order.** At low incomes the first gain is not a return but the halt of a loss, because an idle balance in a high-inflation currency shrinks while a yield-bearing one does not. Interest then accelerates the formation of a buffer, and a buffer is what stops a health shock becoming a debt spiral. An account that earns and spends generates a record, and a record is what substitutes for the collateral these households do not have, which is the bridge from C to D. And the reason none of this exists today is cost: a human relationship costs more than a $40 balance yields, so agents are the only thing that drives the marginal cost of serving the long tail toward zero.
 
-**One dependency sits inside the vision line itself, and belongs in the pitch rather than hidden from it.** The GENIUS Act prohibits payment stablecoin issuers from paying holders any interest or yield solely for holding the token, which is why an exchange can pay rewards on a USDC balance that the issuer legally cannot. Proposed rules extend that prohibition to affiliates and related third parties, and the CLARITY Act's Section 404 would permit rewards tied to transactions while prohibiting passive accrual on idle balances. A plan resting on passive yield is therefore built on a fault line, and a plan resting on yield earned through use is not — which is the form MREP's own subject takes, since an agent is by definition something that transacts rather than something that sits. The platform does not need the passive case to survive, and the record says so rather than assuming the rules hold.
+**One dependency sits behind the vision line, and belongs in the pitch rather than hidden from it.** The GENIUS Act prohibits payment stablecoin issuers from paying holders any interest or yield solely for holding the token, which is why an exchange can pay rewards on a USDC balance that the issuer legally cannot. Proposed rules extend that prohibition to affiliates and related third parties, and the CLARITY Act's Section 404 would permit rewards tied to transactions while prohibiting passive accrual on idle balances. A plan resting on passive yield is therefore built on a fault line, and a plan resting on yield earned through use is not — which is the form MREP's own subject takes, since an agent is by definition something that transacts rather than something that sits. The platform does not need the passive case to survive, and the record says so rather than assuming the rules hold.
 
 **Two further dependencies are outside MREP's control.** The ladder only reaches rung C if the wallets and providers actually serving these populations adopt the primitive, and local capital controls can block access to a dollar-denominated balance whatever the technology does. Neither changes the order of A through D.
 
@@ -78,7 +78,7 @@ Nov 18, 2026 · @dinky
 
 **Three-year vision.** MREP scores agent payment behavior on Base and Tempo, a handful of wallet providers and lenders call it before they set an agent's spending limit, the method is published and has been rerun by someone outside the company, and the quarterly series on genuineness and denomination is cited by people arguing about the size of the agent economy.
 
-**Ten-year vision.** Imagine living in a world where everybody earned high yield interest on their money. Software agents hold and manage balances on their own records, so a saver with forty dollars is served as cheaply as one with forty thousand, and the counterparties their agent meets can price its trustworthiness in milliseconds without knowing who its owner banks with. MREP is the record those counterparties read.
+**Ten-year vision.** Imagine a world where everybody's money earns interest. Software agents hold and manage balances on their own records, so a saver with forty dollars is served as cheaply as one with forty thousand, and the counterparties their agent meets can price its trustworthiness in milliseconds without knowing who its owner banks with. MREP is the record those counterparties read.
 
 ## What happens next, and the gate
 
