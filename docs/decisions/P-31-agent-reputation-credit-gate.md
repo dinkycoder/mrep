@@ -2,6 +2,8 @@
 
 Nov 19, 2026 · @dinky
 
+**Imagine a world where financial insecurity is optional.**
+
 > *"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world."*
 >
 > — attributed to Archimedes

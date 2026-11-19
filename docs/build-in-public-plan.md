@@ -2,6 +2,8 @@
 
 Nov 8, 2026 · @dinky
 
+**Imagine a world where financial insecurity is optional.**
+
 ## Summary
 
 **You build MREP one module at a time, twelve modules in all, on Base Sepolia, Base's free test network, and each module gives readers one challenge they can prove they did.** MREP, the Micro Research and Education Platform, is Kirksey Research's research and education platform for agentic commerce: a toolkit that lets an AI agent hold and spend stablecoins safely, a research desk that scores payment rails and stablecoins and estimates how much agent-payment traffic is genuine, and lessons that teach both (P-26, P-28). It runs on AWS, its contracts are written in Solidity and everything else is Python. MREP is also your capstone. 50T Funds argues that blockchains will become the financial infrastructure for billions of AI agents, which is why this plumbing is worth learning in public.

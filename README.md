@@ -1,5 +1,7 @@
 # MREP
 
+> **Imagine a world where financial insecurity is optional.**
+
 **The independent check on whether AI agents are really spending money.**
 
 MREP, the Micro Research and Education Platform, is an open-source research and education platform for agentic commerce, made by Kirksey Research and built on AWS and Base: a toolkit that lets AI agents hold and spend stablecoins safely, a research desk that scores payment rails and stablecoins on one neutral scorecard and estimates how much agent-payment traffic comes from genuine agents, and lessons that teach both. "Micro" names its subject: agents paying other agents a few cents at a time over x402 and Tempo's Machine Payments Protocol, the payments an agent starts for itself rather than the larger ones it makes on a person's behalf. Its mission is to help AI builders give their agents money safely, one small win at a time. It is built in public one module at a time, with contracts in Solidity and everything else in Python, and each module ends with a reader challenge anyone can prove they did. It climbs a ladder whose rungs end at gates rather than dates. It is also an MSAIE capstone project, and its dates return when the capstone course begins.

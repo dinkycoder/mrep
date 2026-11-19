@@ -2,6 +2,8 @@
 
 Nov 19, 2026 · @dinky
 
+**Imagine a world where financial insecurity is optional.**
+
 ## Summary
 
 **MREP, the Micro Research and Education Platform, is Kirksey Research's reputation layer for agent payments, built on AWS and Base, with stablecoins at its center.** Its product is the score that decides whether an AI agent can be trusted with money, sold to whoever bears the loss when an agent spends, and the measurement work that produces it is the input rather than the thing sold (P-31). "Micro" names what it measures: agents paying other agents a few cents at a time, and the economics of the markets those payments create (P-28). Both MREP and Kirksey Research are working names while the final ones are chosen (P-29).
